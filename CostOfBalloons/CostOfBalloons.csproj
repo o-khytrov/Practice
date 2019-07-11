@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C82380D3-D7C1-48AA-9D20-B49B53463D69}</ProjectGuid>
+    <ProjectGuid>{16D74626-E65F-4A46-B007-0628E90808CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FindProduct</RootNamespace>
-    <AssemblyName>FindProduct</AssemblyName>
+    <RootNamespace>CostOfBalloons</RootNamespace>
+    <AssemblyName>CostOfBalloons</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Console.txt">
+    <Content Include="Console.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
