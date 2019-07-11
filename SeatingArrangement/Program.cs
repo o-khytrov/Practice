@@ -59,11 +59,6 @@ namespace SeatingArrangement
 
         private static void Main(string[] args)
         {
-            for (int i = 1; i <= 108; i++)
-            {
-                Place(i);
-            }
-            Console.ReadKey();
             Console.SetIn(new StreamReader(@"D:\Console.txt"));
             var T = Int32.Parse(Console.ReadLine());
             for (int t = 0; t < T; t++)
