@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostOfBalloons", "CostOfBal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountDivisors", "CountDivisors\CountDivisors.csproj", "{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{C82380D3-D7C1-48AA-9D20-B49B53463D69} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{16D74626-E65F-4A46-B007-0628E90808CF} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
