@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmazeIn", "EmazeIn\EmazeIn.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BricksGame", "BricksGame\BricksGame.csproj", "{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftQueries", "LiftQueries\LiftQueries.csproj", "{63B9DB8E-7923-4099-9622-890FD5C8FAEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B9DB8E-7923-4099-9622-890FD5C8FAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B9DB8E-7923-4099-9622-890FD5C8FAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B9DB8E-7923-4099-9622-890FD5C8FAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B9DB8E-7923-4099-9622-890FD5C8FAEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{F3707DE4-525B-406C-AAEB-2FA35AB4B03B} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{63B9DB8E-7923-4099-9622-890FD5C8FAEE} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
