@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Fact
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleString", "ToggleString\ToggleString.csproj", "{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoyAndProfilePicture", "RoyAndProfilePicture\RoyAndProfilePicture.csproj", "{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
