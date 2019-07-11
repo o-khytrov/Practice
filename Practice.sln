@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountDivisors", "CountDivis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleString", "ToggleString\ToggleString.csproj", "{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{16D74626-E65F-4A46-B007-0628E90808CF} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
