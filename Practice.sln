@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmanAndMrSharma", "AmanAndM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokiAndHisBreakup", "GokiAndHisBreakup\GokiAndHisBreakup.csproj", "{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeTheUniverseAndEverything", "LifeTheUniverseAndEverything\LifeTheUniverseAndEverything.csproj", "{5243E52A-3868-4CD6-B86B-323B1093CEF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,10 @@ Global
 		{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5243E52A-3868-4CD6-B86B-323B1093CEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5243E52A-3868-4CD6-B86B-323B1093CEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5243E52A-3868-4CD6-B86B-323B1093CEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5243E52A-3868-4CD6-B86B-323B1093CEF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +158,7 @@ Global
 		{4E5BB469-12CF-475B-AA1E-08B0BA9BC561} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{D8D63D25-2F5A-43F0-B767-14F0AB02AD74} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{5243E52A-3868-4CD6-B86B-323B1093CEF8} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
