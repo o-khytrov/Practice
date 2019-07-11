@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagrams", "Anagrams\Anagra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromicString", "PalindromicString\PalindromicString.csproj", "{9CDEA2EE-4AA5-45C8-83FC-34533DF63008}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindProduct", "FindProduct\FindProduct.csproj", "{C82380D3-D7C1-48AA-9D20-B49B53463D69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{9CDEA2EE-4AA5-45C8-83FC-34533DF63008}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CDEA2EE-4AA5-45C8-83FC-34533DF63008}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CDEA2EE-4AA5-45C8-83FC-34533DF63008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82380D3-D7C1-48AA-9D20-B49B53463D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82380D3-D7C1-48AA-9D20-B49B53463D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82380D3-D7C1-48AA-9D20-B49B53463D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82380D3-D7C1-48AA-9D20-B49B53463D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 		{680225C3-1FF7-423F-820E-123B2C5BCF5A} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{41DBB3BA-EBDD-4CB7-8295-37DBC5261C61} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{9CDEA2EE-4AA5-45C8-83FC-34533DF63008} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{C82380D3-D7C1-48AA-9D20-B49B53463D69} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
