@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliAndHelpingInnocentPeople
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duration", "Duration\Duration.csproj", "{9EBB6474-DA5F-4E61-A65F-893073DC9CB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfPotionMaking", "BookOfPotionMaking\BookOfPotionMaking.csproj", "{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{9EBB6474-DA5F-4E61-A65F-893073DC9CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBB6474-DA5F-4E61-A65F-893073DC9CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EBB6474-DA5F-4E61-A65F-893073DC9CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,6 +130,7 @@ Global
 		{89CA0BFC-DC2A-4B45-BB68-4E991E02340A} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{5B4FC235-55ED-4EBA-87C4-78F4EB12EABF} = {6D35131E-140A-4139-88F3-B9B02B488422}
 		{9EBB6474-DA5F-4E61-A65F-893073DC9CB2} = {6D35131E-140A-4139-88F3-B9B02B488422}
+		{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5} = {6D35131E-140A-4139-88F3-B9B02B488422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
