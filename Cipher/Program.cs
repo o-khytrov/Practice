@@ -18,31 +18,47 @@ namespace Cipher
                 var c = a[i];
                 if (char.IsDigit(c) || char.IsLetter(c))
                 {
-                    if (c == 'A')
+                    var offset = key;
+                    if (char.IsLetter(c))
                     {
-                        a[i] = 'E';
-                    }
-                    else if (c == 'Y')
-                    {
-                        a[i] = 'C';
-                    }
-                    else if (c == '9')
-                    {
-                        a[i] = '3';
-                    }
-                    else
-                    {
-                        var offset = key;
-                        if (char.IsLetter(c) && offset > 26)
+                        if (offset >= 26)
                         {
                             offset = offset % 26;
                         }
-                        if (char.IsDigit(c) && offset > 10)
+                        if (char.IsUpper(c))
+                        {
+                            var charsToEnd = 90 - c;
+                            if (offset > charsToEnd)
+                            {
+                                c = (char)65;
+                                offset -= charsToEnd + 1;
+                            }
+                        }
+                        else
+                        {
+                            var charsToEnd = 122 - c;
+                            if (offset > charsToEnd)
+                            {
+                                c = (char)97;
+                                offset -= charsToEnd + 1;
+                            }
+                        }
+                    }
+                    if (char.IsDigit(c))
+                    {
+                        if (offset >= 10)
                         {
                             offset = offset % 10;
                         }
-                        a[i] = Convert.ToChar((int)c + offset);
+
+                        var charsToEnd = 57 - c;
+                        if (offset > charsToEnd)
+                        {
+                            c = (char)48;
+                            offset -= charsToEnd + 1;
+                        }
                     }
+                    a[i] = Convert.ToChar((int)c + offset);
                 }
             }
             s = new string(a);
