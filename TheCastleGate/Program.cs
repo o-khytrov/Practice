@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 
 namespace TheCastleGate
 {
@@ -16,27 +14,6 @@ namespace TheCastleGate
 
             var T = Int32.Parse(Console.ReadLine());
 
-            //for (int t = 0; t < T; t++)
-            //{
-            //    var N = Int32.Parse(Console.ReadLine());
-            //    var set = new List<Tuple<int, int>>();
-            //    for (int i = 2; i <= N; i++)
-            //    {
-            //        for (int j = 1; j <= N; j++)
-            //        {
-            //            if (j != i)
-            //            {
-            //                if ((i ^ j) < N)
-            //                {
-            //                    var tup = new Tuple<int, int>(Math.Max(i, j), Math.Min(i, j));
-            //                    set.Add(tup);
-            //                }
-            //            }
-            //        }
-            //    }
-            //    var res = set.Distinct().Count();
-            //    Console.WriteLine(res);
-            //}
             for (int t = 0; t < T; t++)
             {
                 int count = 0;
