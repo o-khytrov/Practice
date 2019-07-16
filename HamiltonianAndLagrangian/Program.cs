@@ -20,12 +20,21 @@ namespace HamiltonianAndLagrangian
             var r = new List<int>();
             for (int i = 0; i < A.Length; i++)
             {
-                var right = i < A.Length-1 ? A[i + 1] : 0;
-                if (A[i] > right)
-                {
-                    r.Add(A[i]);
-                }
+                var val = A[i];
+                var hasNoGraterMarks = true;
 
+                for (int j = i + 1; j < A.Length; j++)
+                {
+                    if (val < A[j])
+                    {
+                        hasNoGraterMarks = false;
+                        break;
+                    }
+                }
+                if (hasNoGraterMarks)
+                {
+                    r.Add(val);
+                }
             }
             Console.WriteLine(string.Join(" ", r));
             Console.ReadKey();
