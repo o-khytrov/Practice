@@ -127,6 +127,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeutralisationOfCharges", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndThePowerOfTime", "MonkAndThePowerOfTime\MonkAndThePowerOfTime.csproj", "{30047F9A-8FAD-4AEC-87DC-FE4590A92B37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongATMQueue", "LongATMQueue\LongATMQueue.csproj", "{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{30047F9A-8FAD-4AEC-87DC-FE4590A92B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30047F9A-8FAD-4AEC-87DC-FE4590A92B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30047F9A-8FAD-4AEC-87DC-FE4590A92B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -397,6 +403,7 @@ Global
 		{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 		{062BDD6E-ACF9-4DC8-AB52-1C6EE6021361} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 		{30047F9A-8FAD-4AEC-87DC-FE4590A92B37} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
+		{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
