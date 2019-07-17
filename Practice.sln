@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoArrays", "TwoArrays\TwoA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{0310D532-BF1F-4FEA-9907-62BC313144EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPossibility", "PolygonPossibility\PolygonPossibility.csproj", "{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,10 @@ Global
 		{0310D532-BF1F-4FEA-9907-62BC313144EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0310D532-BF1F-4FEA-9907-62BC313144EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0310D532-BF1F-4FEA-9907-62BC313144EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -376,6 +382,7 @@ Global
 		{7321A45E-9671-439E-B153-15945693154E} = {8C1F52C8-1A0F-4B43-AFFB-F1FE4ED0A3E6}
 		{7E3077C9-E980-4A5E-B7DB-32E00D9E155D} = {7321A45E-9671-439E-B153-15945693154E}
 		{0310D532-BF1F-4FEA-9907-62BC313144EF} = {7321A45E-9671-439E-B153-15945693154E}
+		{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
