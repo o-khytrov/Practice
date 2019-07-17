@@ -14,6 +14,24 @@ namespace PolygonPossibility
                 Console.SetIn(new StreamReader("Console.txt"));
 
 
+            var T = Int32.Parse(Console.ReadLine().Trim());
+            for (int t = 0; t < T; t++)
+            {
+
+                var N = Int32.Parse(Console.ReadLine().Trim());
+
+                var A = Console.ReadLine().Trim().Split(' ').Select(Int32.Parse).ToArray();
+                var Max = A.Max(x => x);
+                var sum = A.Sum(x => x) - Max;
+                if (sum > Max)
+                {
+                    Console.WriteLine("Yes");
+                }
+                else
+                {
+                    Console.WriteLine("No");
+                }
+            }
             Console.ReadKey();
         }
     }
