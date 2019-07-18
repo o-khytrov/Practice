@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -16,7 +15,6 @@ namespace Takeoff
             var T = Int32.Parse(Console.ReadLine().Trim());
             for (int t = 0; t < T; t++)
             {
-
                 var A = Console.ReadLine().Trim().Split(' ').Select(Int32.Parse).ToArray();
                 var N = A[0];
 
@@ -35,11 +33,10 @@ namespace Takeoff
                     if (i % r == 0)
                         flights++;
 
-                    if (flights==1)
+                    if (flights == 1)
                         couneter++;
                 }
                 Console.WriteLine(couneter);
-
             }
 
             Console.ReadKey();
