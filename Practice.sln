@@ -135,6 +135,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Takeoff", "DataStructures\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximizeTheEarning", "DataStructures\Arrays\1D\MaximizeTheEarning\MaximizeTheEarning.csproj", "{F2429FCC-F6AA-445E-8045-740487808665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrangeGame", "DataStructures\Arrays\1D\StrangeGame\StrangeGame.csproj", "{593DEFDD-1B89-4F7E-AA32-1771C44BC323}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -357,6 +359,10 @@ Global
 		{F2429FCC-F6AA-445E-8045-740487808665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2429FCC-F6AA-445E-8045-740487808665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2429FCC-F6AA-445E-8045-740487808665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593DEFDD-1B89-4F7E-AA32-1771C44BC323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593DEFDD-1B89-4F7E-AA32-1771C44BC323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593DEFDD-1B89-4F7E-AA32-1771C44BC323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593DEFDD-1B89-4F7E-AA32-1771C44BC323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -424,6 +430,7 @@ Global
 		{ABBA52C3-FEC2-4CFA-A021-1CCBBB0CD696} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 		{B8F5989F-397C-4252-990F-14726B8C937B} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 		{F2429FCC-F6AA-445E-8045-740487808665} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
+		{593DEFDD-1B89-4F7E-AA32-1771C44BC323} = {731385C9-FCAC-409B-8F94-E7BC4BD1693F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
