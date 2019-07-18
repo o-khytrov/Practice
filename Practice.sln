@@ -7,93 +7,93 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicProgramming", "BasicPr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputOutput", "InputOutput", "{6D35131E-140A-4139-88F3-B9B02B488422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatingArrangement", "SeatingArrangement\SeatingArrangement.csproj", "{680225C3-1FF7-423F-820E-123B2C5BCF5A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatingArrangement", "BasicProgramming\InputOutput\SeatingArrangement\SeatingArrangement.csproj", "{680225C3-1FF7-423F-820E-123B2C5BCF5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagrams", "Anagrams\Anagrams.csproj", "{41DBB3BA-EBDD-4CB7-8295-37DBC5261C61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anagrams", "BasicProgramming\InputOutput\Anagrams\Anagrams.csproj", "{41DBB3BA-EBDD-4CB7-8295-37DBC5261C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromicString", "PalindromicString\PalindromicString.csproj", "{9CDEA2EE-4AA5-45C8-83FC-34533DF63008}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromicString", "BasicProgramming\InputOutput\PalindromicString\PalindromicString.csproj", "{9CDEA2EE-4AA5-45C8-83FC-34533DF63008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindProduct", "FindProduct\FindProduct.csproj", "{C82380D3-D7C1-48AA-9D20-B49B53463D69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindProduct", "BasicProgramming\InputOutput\FindProduct\FindProduct.csproj", "{C82380D3-D7C1-48AA-9D20-B49B53463D69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostOfBalloons", "CostOfBalloons\CostOfBalloons.csproj", "{16D74626-E65F-4A46-B007-0628E90808CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostOfBalloons", "BasicProgramming\InputOutput\CostOfBalloons\CostOfBalloons.csproj", "{16D74626-E65F-4A46-B007-0628E90808CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountDivisors", "CountDivisors\CountDivisors.csproj", "{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountDivisors", "BasicProgramming\InputOutput\CountDivisors\CountDivisors.csproj", "{DB2C0EFD-4E74-4AAC-9DB2-4482B49558D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "BasicProgramming\InputOutput\Factorial\Factorial.csproj", "{5F9800F1-FC7D-4B2B-A10C-05DB3F5AD839}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleString", "ToggleString\ToggleString.csproj", "{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleString", "BasicProgramming\InputOutput\ToggleString\ToggleString.csproj", "{CD6B7306-FB49-4EF2-9DE4-65293FCAB42F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoyAndProfilePicture", "RoyAndProfilePicture\RoyAndProfilePicture.csproj", "{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoyAndProfilePicture", "BasicProgramming\InputOutput\RoyAndProfilePicture\RoyAndProfilePicture.csproj", "{7D1AD4CC-5101-44EB-AFDC-A3A8DBE9E8C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmazeIn", "EmazeIn\EmazeIn.csproj", "{F3707DE4-525B-406C-AAEB-2FA35AB4B03B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmazeIn", "BasicProgramming\InputOutput\EmazeIn\EmazeIn.csproj", "{F3707DE4-525B-406C-AAEB-2FA35AB4B03B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BricksGame", "BricksGame\BricksGame.csproj", "{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BricksGame", "BasicProgramming\InputOutput\BricksGame\BricksGame.csproj", "{F303447E-A70B-4D4E-8FB9-C85DEC3C9A46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftQueries", "LiftQueries\LiftQueries.csproj", "{63B9DB8E-7923-4099-9622-890FD5C8FAEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftQueries", "BasicProgramming\InputOutput\LiftQueries\LiftQueries.csproj", "{63B9DB8E-7923-4099-9622-890FD5C8FAEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoStrings", "TwoStrings\TwoStrings.csproj", "{89CA0BFC-DC2A-4B45-BB68-4E991E02340A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoStrings", "BasicProgramming\InputOutput\TwoStrings\TwoStrings.csproj", "{89CA0BFC-DC2A-4B45-BB68-4E991E02340A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliAndHelpingInnocentPeople", "AliAndHelpingInnocentPeople\AliAndHelpingInnocentPeople.csproj", "{5B4FC235-55ED-4EBA-87C4-78F4EB12EABF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliAndHelpingInnocentPeople", "BasicProgramming\InputOutput\AliAndHelpingInnocentPeople\AliAndHelpingInnocentPeople.csproj", "{5B4FC235-55ED-4EBA-87C4-78F4EB12EABF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duration", "Duration\Duration.csproj", "{9EBB6474-DA5F-4E61-A65F-893073DC9CB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duration", "BasicProgramming\InputOutput\Duration\Duration.csproj", "{9EBB6474-DA5F-4E61-A65F-893073DC9CB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfPotionMaking", "BookOfPotionMaking\BookOfPotionMaking.csproj", "{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfPotionMaking", "BasicProgramming\InputOutput\BookOfPotionMaking\BookOfPotionMaking.csproj", "{71395F86-1F9D-47D3-BDAA-11AE3B1DEAB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{4E5BB469-12CF-475B-AA1E-08B0BA9BC561}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "BasicProgramming\InputOutput\Hello\Hello.csproj", "{4E5BB469-12CF-475B-AA1E-08B0BA9BC561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmanAndMrSharma", "AmanAndMrSharma\AmanAndMrSharma.csproj", "{D8D63D25-2F5A-43F0-B767-14F0AB02AD74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmanAndMrSharma", "BasicProgramming\InputOutput\AmanAndMrSharma\AmanAndMrSharma.csproj", "{D8D63D25-2F5A-43F0-B767-14F0AB02AD74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokiAndHisBreakup", "GokiAndHisBreakup\GokiAndHisBreakup.csproj", "{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GokiAndHisBreakup", "BasicProgramming\InputOutput\GokiAndHisBreakup\GokiAndHisBreakup.csproj", "{E0566EFC-4DA7-469A-AD59-8CEB3BD78E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeTheUniverseAndEverything", "LifeTheUniverseAndEverything\LifeTheUniverseAndEverything.csproj", "{5243E52A-3868-4CD6-B86B-323B1093CEF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeTheUniverseAndEverything", "BasicProgramming\InputOutput\LifeTheUniverseAndEverything\LifeTheUniverseAndEverything.csproj", "{5243E52A-3868-4CD6-B86B-323B1093CEF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ladderophilia", "Ladderophilia\Ladderophilia.csproj", "{0A789C22-D0AD-4DB4-A737-5C5AF131E93B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ladderophilia", "BasicProgramming\InputOutput\Ladderophilia\Ladderophilia.csproj", "{0A789C22-D0AD-4DB4-A737-5C5AF131E93B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharSum", "CharSum\CharSum.csproj", "{3592AF73-3A10-4256-BF7B-CE2CADBD4B50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharSum", "BasicProgramming\InputOutput\CharSum\CharSum.csproj", "{3592AF73-3A10-4256-BF7B-CE2CADBD4B50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayWithNumbers", "PlayWithNumbers\PlayWithNumbers.csproj", "{ED3FBCDE-0D1F-4BFA-8F87-76074216B1C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayWithNumbers", "BasicProgramming\InputOutput\PlayWithNumbers\PlayWithNumbers.csproj", "{ED3FBCDE-0D1F-4BFA-8F87-76074216B1C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenSegmentDisplay", "SevenSegmentDisplay\SevenSegmentDisplay.csproj", "{E78FE033-8835-42E2-A3A2-5F96A13FE546}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenSegmentDisplay", "BasicProgramming\InputOutput\SevenSegmentDisplay\SevenSegmentDisplay.csproj", "{E78FE033-8835-42E2-A3A2-5F96A13FE546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestIndex", "BestIndex\BestIndex.csproj", "{71C9D6A3-CF02-43C2-A6DF-E88C3F514D9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestIndex", "BasicProgramming\InputOutput\BestIndex\BestIndex.csproj", "{71C9D6A3-CF02-43C2-A6DF-E88C3F514D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cipher", "Cipher\Cipher.csproj", "{2DD6D63B-C84E-493F-B4E9-AF41B6B6749D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cipher", "BasicProgramming\InputOutput\Cipher\Cipher.csproj", "{2DD6D63B-C84E-493F-B4E9-AF41B6B6749D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimizeCost", "MinimizeCost\MinimizeCost.csproj", "{A306A14F-5F88-4234-BDC3-F63EADFF3DF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimizeCost", "BasicProgramming\InputOutput\MinimizeCost\MinimizeCost.csproj", "{A306A14F-5F88-4234-BDC3-F63EADFF3DF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicalWord", "MagicalWord\MagicalWord.csproj", "{A9C5BF75-BBE2-4E8E-94D1-AD26DEE05E5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicalWord", "BasicProgramming\InputOutput\MagicalWord\MagicalWord.csproj", "{A9C5BF75-BBE2-4E8E-94D1-AD26DEE05E5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TimeAndSpaceComplexity", "TimeAndSpaceComplexity", "{E8E0AC3F-9556-42B7-A4EE-94B0D441DFE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VowelRecognition", "VowelRecognition\VowelRecognition.csproj", "{EEC93FFA-98CF-4650-AC6D-5DF87B9EE6CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VowelRecognition", "BasicProgramming\TimeAndSpaceComplexity\VowelRecognition\VowelRecognition.csproj", "{EEC93FFA-98CF-4650-AC6D-5DF87B9EE6CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basics of Operators", "Basics of Operators", "{F75D537F-BFF4-4E99-9DE4-942AB4547BE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetUsUnderstandComputer", "LetUsUnderstandComputer\LetUsUnderstandComputer.csproj", "{1FB7E9C8-CF2C-4269-8A10-35D1E1F6D7CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetUsUnderstandComputer", "BasicProgramming\Basics of operators\LetUsUnderstandComputer\LetUsUnderstandComputer.csproj", "{1FB7E9C8-CF2C-4269-8A10-35D1E1F6D7CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayParty", "BirthdayParty\BirthdayParty.csproj", "{7DB32985-EE36-4424-AFB4-2E2345ABDE66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayParty", "BasicProgramming\Basics of operators\BirthdayParty\BirthdayParty.csproj", "{7DB32985-EE36-4424-AFB4-2E2345ABDE66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherPartitionProblem", "YetAnotherPartitionProblem\YetAnotherPartitionProblem.csproj", "{0E02B79A-4861-4E25-A5DD-30F58677691C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YetAnotherPartitionProblem", "BasicProgramming\Basics of operators\YetAnotherPartitionProblem\YetAnotherPartitionProblem.csproj", "{0E02B79A-4861-4E25-A5DD-30F58677691C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicsOfBitManipulation", "BasicsOfBitManipulation", "{EE2916D1-C1ED-4EBB-8E54-16A2FA7D36CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystery", "Mystery\Mystery.csproj", "{F74B6C44-9365-4979-B549-B63837692C1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mystery", "BasicProgramming\BasicsOfBitManipulation\Mystery\Mystery.csproj", "{F74B6C44-9365-4979-B549-B63837692C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubhamAndBinaryStrings", "SubhamAndBinaryStrings\SubhamAndBinaryStrings.csproj", "{7A0D662F-B021-4DD0-B252-177DBD1D070E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubhamAndBinaryStrings", "BasicProgramming\BasicsOfBitManipulation\SubhamAndBinaryStrings\SubhamAndBinaryStrings.csproj", "{7A0D662F-B021-4DD0-B252-177DBD1D070E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndTheBoxOfCookies", "MonkAndTheBoxOfCookies\MonkAndTheBoxOfCookies.csproj", "{39D19382-0420-4998-8630-7F527973DEB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndTheBoxOfCookies", "BasicProgramming\BasicsOfBitManipulation\MonkAndTheBoxOfCookies\MonkAndTheBoxOfCookies.csproj", "{39D19382-0420-4998-8630-7F527973DEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCastleGate", "TheCastleGate\TheCastleGate.csproj", "{D69C5616-81E8-4C6D-9725-2742656233D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheCastleGate", "BasicProgramming\BasicsOfBitManipulation\TheCastleGate\TheCastleGate.csproj", "{D69C5616-81E8-4C6D-9725-2742656233D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpYourRoommate", "HelpYourRoommate\HelpYourRoommate.csproj", "{1F8BE10F-72C2-4D33-A784-FA0431DB69A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpYourRoommate", "BasicProgramming\BasicsOfBitManipulation\HelpYourRoommate\HelpYourRoommate.csproj", "{1F8BE10F-72C2-4D33-A784-FA0431DB69A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursion and Backtracking", "Recursion and Backtracking", "{926534E1-3DE2-421D-ADE7-FC87983DB19A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCDStrings", "GCDStrings\GCDStrings.csproj", "{6BE98DCC-CF3D-4BF3-82F9-5279DED1A9C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCDStrings", "BasicProgramming\Recursion and Backtracking\GCDStrings\GCDStrings.csproj", "{6BE98DCC-CF3D-4BF3-82F9-5279DED1A9C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arena", "Arena", "{45CC8B8A-FAC7-49DE-91E6-72B116DBC812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBlessing", "TheBlessing\TheBlessing.csproj", "{F013A3F3-264D-46AF-9AED-CE9BCE93387B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheBlessing", "Arena\TheBlessing\TheBlessing.csproj", "{F013A3F3-264D-46AF-9AED-CE9BCE93387B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{95811617-0334-4686-BBE5-4EE045BAEBFD}"
 EndProject
@@ -101,37 +101,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays", "Arrays", "{64917C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1D", "1D", "{731385C9-FCAC-409B-8F94-E7BC4BD1693F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemorizeMe", "MemorizeMe\MemorizeMe.csproj", "{C2F17CEE-2DD5-4E4B-8A98-816A40D55734}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemorizeMe", "DataStructures\Arrays\1D\MemorizeMe\MemorizeMe.csproj", "{C2F17CEE-2DD5-4E4B-8A98-816A40D55734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryQueries", "BinaryQueries\BinaryQueries.csproj", "{52FCEC1B-49E9-4425-8BB1-847FE675D3D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryQueries", "DataStructures\Arrays\1D\BinaryQueries\BinaryQueries.csproj", "{52FCEC1B-49E9-4425-8BB1-847FE675D3D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndWelcomeProblem", "MonkAndWelcomeProblem\MonkAndWelcomeProblem.csproj", "{DDB2C26A-AC6F-4FD4-AF73-B6F159BCE914}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndWelcomeProblem", "DataStructures\Arrays\1D\MonkAndWelcomeProblem\MonkAndWelcomeProblem.csproj", "{DDB2C26A-AC6F-4FD4-AF73-B6F159BCE914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroAndArrayUpdate", "MicroAndArrayUpdate\MicroAndArrayUpdate.csproj", "{E92170FE-AB93-49D9-B989-FC69B4FB8D35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroAndArrayUpdate", "DataStructures\Arrays\1D\MicroAndArrayUpdate\MicroAndArrayUpdate.csproj", "{E92170FE-AB93-49D9-B989-FC69B4FB8D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamiltonianAndLagrangian", "HamiltonianAndLagrangian\HamiltonianAndLagrangian.csproj", "{91A0A535-ED93-4182-B5B6-5EAD74465292}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamiltonianAndLagrangian", "DataStructures\Arrays\1D\HamiltonianAndLagrangian\HamiltonianAndLagrangian.csproj", "{91A0A535-ED93-4182-B5B6-5EAD74465292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChargedUpArray", "ChargedUpArray\ChargedUpArray.csproj", "{5C474CD7-429D-4C4D-95B2-4346FA1C9BAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChargedUpArray", "DataStructures\Arrays\1D\ChargedUpArray\ChargedUpArray.csproj", "{5C474CD7-429D-4C4D-95B2-4346FA1C9BAE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Challenges", "Challenges", "{8C1F52C8-1A0F-4B43-AFFB-F1FE4ED0A3E6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HourStorm", "HourStorm", "{7321A45E-9671-439E-B153-15945693154E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoArrays", "TwoArrays\TwoArrays.csproj", "{7E3077C9-E980-4A5E-B7DB-32E00D9E155D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoArrays", "Challenges\HourStorm\TwoArrays\TwoArrays.csproj", "{7E3077C9-E980-4A5E-B7DB-32E00D9E155D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{0310D532-BF1F-4FEA-9907-62BC313144EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "Challenges\HourStorm\TicTacToe\TicTacToe.csproj", "{0310D532-BF1F-4FEA-9907-62BC313144EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPossibility", "PolygonPossibility\PolygonPossibility.csproj", "{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPossibility", "DataStructures\Arrays\1D\PolygonPossibility\PolygonPossibility.csproj", "{ECBABADF-DB5F-47DD-9BB4-7F3AC5E2C207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeutralisationOfCharges", "NeutralisationOfCharges\NeutralisationOfCharges.csproj", "{062BDD6E-ACF9-4DC8-AB52-1C6EE6021361}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeutralisationOfCharges", "DataStructures\Arrays\1D\NeutralisationOfCharges\NeutralisationOfCharges.csproj", "{062BDD6E-ACF9-4DC8-AB52-1C6EE6021361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndThePowerOfTime", "MonkAndThePowerOfTime\MonkAndThePowerOfTime.csproj", "{30047F9A-8FAD-4AEC-87DC-FE4590A92B37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkAndThePowerOfTime", "DataStructures\Arrays\1D\MonkAndThePowerOfTime\MonkAndThePowerOfTime.csproj", "{30047F9A-8FAD-4AEC-87DC-FE4590A92B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongATMQueue", "LongATMQueue\LongATMQueue.csproj", "{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongATMQueue", "DataStructures\Arrays\1D\LongATMQueue\LongATMQueue.csproj", "{081BC6A4-EC71-498E-AAE8-71BC42CC5A3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpJarvis!", "HelpJarvis!\HelpJarvis!.csproj", "{ABBA52C3-FEC2-4CFA-A021-1CCBBB0CD696}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpJarvis!", "DataStructures\Arrays\1D\HelpJarvis!\HelpJarvis!.csproj", "{ABBA52C3-FEC2-4CFA-A021-1CCBBB0CD696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Takeoff", "Takeoff\Takeoff.csproj", "{B8F5989F-397C-4252-990F-14726B8C937B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Takeoff", "DataStructures\Arrays\1D\Takeoff\Takeoff.csproj", "{B8F5989F-397C-4252-990F-14726B8C937B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximizeTheEarning", "DataStructures\Arrays\1D\MaximizeTheEarning\MaximizeTheEarning.csproj", "{F2429FCC-F6AA-445E-8045-740487808665}"
 EndProject
@@ -405,7 +405,6 @@ Global
 		{1F8BE10F-72C2-4D33-A784-FA0431DB69A9} = {EE2916D1-C1ED-4EBB-8E54-16A2FA7D36CC}
 		{926534E1-3DE2-421D-ADE7-FC87983DB19A} = {3F4F6CC7-DB40-4FC9-84CA-45BF19E266BE}
 		{6BE98DCC-CF3D-4BF3-82F9-5279DED1A9C2} = {926534E1-3DE2-421D-ADE7-FC87983DB19A}
-		{45CC8B8A-FAC7-49DE-91E6-72B116DBC812} = {3F4F6CC7-DB40-4FC9-84CA-45BF19E266BE}
 		{F013A3F3-264D-46AF-9AED-CE9BCE93387B} = {45CC8B8A-FAC7-49DE-91E6-72B116DBC812}
 		{64917CB7-8845-4452-A828-AB084F4131C1} = {95811617-0334-4686-BBE5-4EE045BAEBFD}
 		{731385C9-FCAC-409B-8F94-E7BC4BD1693F} = {64917CB7-8845-4452-A828-AB084F4131C1}
