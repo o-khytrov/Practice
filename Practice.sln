@@ -145,7 +145,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EEDCLab", "DataStructures\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfiniteArrays", "DataStructures\Arrays\1D\InfiniteArrays\InfiniteArrays.csproj", "{45FFB77D-82BD-4776-B14A-631C46BA0BD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallestPositiveInteger", "SmallestPositiveInteger\SmallestPositiveInteger.csproj", "{F7DA1E47-EE5D-472E-8D8F-867258922A50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallestPositiveInteger", "Arena\SmallestPositiveInteger\SmallestPositiveInteger.csproj", "{F7DA1E47-EE5D-472E-8D8F-867258922A50}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remains", "Arena\Remains\Remains.csproj", "{46FA77C9-A2C5-449C-8A9E-EF021ED3F918}"
 EndProject
