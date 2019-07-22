@@ -26,9 +26,9 @@ namespace TirednessGraphics
         private void InitInfo()
         {
             infos = new List<GraphVertexInfo>();
-            foreach (var v in graph.Vertices)
+            foreach (var kvp in graph.Vertices)
             {
-                infos.Add(new GraphVertexInfo(v));
+                infos.Add(new GraphVertexInfo(kvp.Value));
             }
         }
 
@@ -137,7 +137,7 @@ namespace TirednessGraphics
             while (startVertex != endVertex)
             {
                 endVertex = GetVertexInfo(endVertex).PreviousVertex;
-                path = endVertex.ToString()+";" + path;
+                path = endVertex.ToString() + ";" + path;
             }
 
             return path;

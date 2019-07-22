@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -32,14 +31,14 @@ namespace TirednessGraphics
             StringFormat.Alignment = StringAlignment.Center;
             NodeNameFont = new Font("Arial", 0.3f); ;
             EdgeWeightFont = new Font("Arial", 0.1f); ;
-            
+
             VertexRadius = 0.5f;
         }
 
         public Bitmap Visualize()
         {
-            foreach (var v in Graph.Vertices)
-                DrawVertex(v);
+            foreach (var kvp in Graph.Vertices)
+                DrawVertex(kvp.Value);
 
             return Bitmap;
         }
@@ -116,10 +115,6 @@ namespace TirednessGraphics
             return point;
         }
 
-
-
-
-
         public void Dispose()
         {
             Graphics.Dispose();
@@ -127,7 +122,5 @@ namespace TirednessGraphics
             NodeNameFont.Dispose();
             EdgeWeightFont.Dispose();
         }
-
-
     }
 }

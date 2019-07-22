@@ -7,14 +7,14 @@ namespace TirednessGraphics
         /// <summary>
         /// Список вершин графа
         /// </summary>
-        public List<GraphVertex> Vertices { get; }
+        public Dictionary<string, GraphVertex> Vertices { get; }
 
         /// <summary>
         /// Конструктор
         /// </summary>
         public Graph()
         {
-            Vertices = new List<GraphVertex>();
+            Vertices = new Dictionary<string, GraphVertex>();
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace TirednessGraphics
         /// <param name="vertexName">Имя вершины</param>
         public void AddVertex(string vertexName)
         {
-            Vertices.Add(new GraphVertex(vertexName));
+            Vertices.Add(vertexName, new GraphVertex(vertexName));
         }
 
         /// <summary>
@@ -33,14 +33,10 @@ namespace TirednessGraphics
         /// <returns>Найденная вершина</returns>
         public GraphVertex FindVertex(string vertexName)
         {
-            foreach (var v in Vertices)
+            if (Vertices.ContainsKey(vertexName))
             {
-                if (v.Name.Equals(vertexName))
-                {
-                    return v;
-                }
+                return Vertices[vertexName];
             }
-
             return null;
         }
 
@@ -57,7 +53,7 @@ namespace TirednessGraphics
             if (v2 != null && v1 != null)
             {
                 v1.AddEdge(v2, weight);
-               // v2.AddEdge(v1, weight);
+                // v2.AddEdge(v1, weight);
             }
         }
     }

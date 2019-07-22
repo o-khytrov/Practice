@@ -116,7 +116,7 @@ namespace TirednessGraphics
                 using (SolidBrush drawBrush = new SolidBrush(color))
                 using (Pen p = new Pen(color, 0.3f))
                 {
-                    Graphics.DrawRectangle(p, canpy.P1.X - 1, canpy.P1.Y - 1, (canpy.P2.X - canpy.P1.X), canpy.P2.Y - canpy.P1.Y);
+                    Graphics.DrawRectangle(p, canpy.P1.X - 1, canpy.P1.Y - 1, (canpy.P2.X - canpy.P1.X) + 1, canpy.P2.Y - canpy.P1.Y + 1);
                     Graphics.DrawString(canpy.Rate.ToString(), drawFont, drawBrush, canpy.P1.X, canpy.P1.Y);
                 }
             }
