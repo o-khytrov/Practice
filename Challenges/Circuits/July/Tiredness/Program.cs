@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using System.IO;
 using System.Linq;
+using System.Text;
 
 public struct Point
 {
@@ -78,9 +79,9 @@ public partial class Dijkstra
     private void InitInfo()
     {
         infos = new List<GraphVertexInfo>();
-        foreach (var v in graph.Vertices)
+        foreach (var kvp in graph.Vertices)
         {
-            infos.Add(new GraphVertexInfo(v));
+            infos.Add(new GraphVertexInfo(kvp.Value));
         }
     }
 
@@ -195,20 +196,19 @@ public partial class Dijkstra
         return path;
     }
 }
-
 public class Graph
 {
     /// <summary>
     /// Список вершин графа
     /// </summary>
-    public List<GraphVertex> Vertices { get; }
+    public Dictionary<string, GraphVertex> Vertices { get; }
 
     /// <summary>
     /// Конструктор
     /// </summary>
     public Graph()
     {
-        Vertices = new List<GraphVertex>();
+        Vertices = new Dictionary<string, GraphVertex>();
     }
 
     /// <summary>
@@ -217,7 +217,7 @@ public class Graph
     /// <param name="vertexName">Имя вершины</param>
     public void AddVertex(string vertexName)
     {
-        Vertices.Add(new GraphVertex(vertexName));
+        Vertices.Add(vertexName, new GraphVertex(vertexName));
     }
 
     /// <summary>
@@ -227,14 +227,10 @@ public class Graph
     /// <returns>Найденная вершина</returns>
     public GraphVertex FindVertex(string vertexName)
     {
-        foreach (var v in Vertices)
+        if (Vertices.ContainsKey(vertexName))
         {
-            if (v.Name.Equals(vertexName))
-            {
-                return v;
-            }
+            return Vertices[vertexName];
         }
-
         return null;
     }
 
@@ -462,6 +458,34 @@ public class Processor
         }
     }
 
+    public void ThrowInput()
+    {
+        var value = Environment.GetEnvironmentVariable("Console_Txt", EnvironmentVariableTarget.User);
+        if (value == "True")
+            Console.SetIn(new StreamReader("Console.txt"));
+        var sb = new StringBuilder();
+        var line = Console.ReadLine();
+        var A1 = line.Trim().Split(' ').Select(Int32.Parse).ToArray();
+        sb.AppendLine(line);
+        var N = A1[0];
+        var D = A1[1];
+        CostOfDirectionChange = D;
+        line = Console.ReadLine();
+        sb.AppendLine(line);
+        var A = line.Trim().Split(' ').Select(Int32.Parse).ToArray();
+        GeneralCost = A[4];
+        Start = new Point(A[0], A[1]);
+        Destination = new Point(A[2], A[3]);
+
+        Canopies = new List<Canopy>();
+        for (int n = 0; n < N; n++)
+        {
+            line = Console.ReadLine();
+            var a = line.Trim().Split(' ').Select(Int32.Parse).ToArray();
+            sb.AppendLine(line);
+        }
+        throw new Exception(sb.ToString());
+    }
     public List<string> Answer()
     {
         var strings = Path.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToArray();
@@ -500,7 +524,7 @@ internal class Program
     private static void Main(string[] args)
     {
         var processor = new Processor();
-        processor.Proces();
+        processor.ThrowInput();
         var answer = processor.Answer();
         Console.WriteLine(answer.Count);
         foreach (var line in answer)

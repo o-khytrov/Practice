@@ -11,7 +11,7 @@ namespace LostInTheCity
         public Bitmap Bitmap { get; set; }
         public Point Start { get; set; }
         public Point Destination { get; set; }
-        public List<Canopy> Canopies { get; set; }
+       
         public string Path { get; set; }
 
         public GridVisualizer()
@@ -106,21 +106,21 @@ namespace LostInTheCity
             }
         }
 
-        private void DrawCanopies()
-        {
-            Font drawFont = new Font("Arial", 0.3f);
+        //private void DrawCanopies()
+        //{
+        //    Font drawFont = new Font("Arial", 0.3f);
 
-            foreach (var canpy in Canopies)
-            {
-                var color = canpy.Color;
-                using (SolidBrush drawBrush = new SolidBrush(color))
-                using (Pen p = new Pen(color, 0.3f))
-                {
-                    Graphics.DrawRectangle(p, canpy.P1.X - 1, canpy.P1.Y - 1, (canpy.P2.X - canpy.P1.X) + 1, canpy.P2.Y - canpy.P1.Y + 1);
-                    Graphics.DrawString(canpy.Rate.ToString(), drawFont, drawBrush, canpy.P1.X, canpy.P1.Y);
-                }
-            }
-        }
+        //    foreach (var canpy in Canopies)
+        //    {
+        //        var color = canpy.Color;
+        //        using (SolidBrush drawBrush = new SolidBrush(color))
+        //        using (Pen p = new Pen(color, 0.3f))
+        //        {
+        //            Graphics.DrawRectangle(p, canpy.P1.X - 1, canpy.P1.Y - 1, (canpy.P2.X - canpy.P1.X) + 1, canpy.P2.Y - canpy.P1.Y + 1);
+        //            Graphics.DrawString(canpy.Rate.ToString(), drawFont, drawBrush, canpy.P1.X, canpy.P1.Y);
+        //        }
+        //    }
+        //}
 
         public void Dispose()
         {
@@ -134,7 +134,7 @@ namespace LostInTheCity
             DrawPoint(Start, Color.Green);
 
             DrawPoint(Destination, Color.Red);
-            DrawCanopies();
+            //DrawCanopies();
             DrawRoute();
             return Bitmap;
         }

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace TirednessGraphics
+namespace LostInTheCity
 {
     public class Canopy
     {

@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace TirednessGraphics
+namespace LostInTheCity
 {
     public partial class Main : Form
     {

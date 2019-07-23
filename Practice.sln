@@ -161,6 +161,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiredness", "Challenges\Cir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TirednessGraphics", "Challenges\Circuits\July\TirednessGraphics\TirednessGraphics.csproj", "{669E6476-0708-485B-8A4F-FCA754B469E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthOfTtheGame", "Challenges\Circuits\July\StrengthOfTtheGame\StrengthOfTtheGame\StrengthOfTtheGame.csproj", "{7286297D-4BDB-464B-93B4-1128CDE76754}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostInTheCity", "Challenges\Circuits\July\LostInTheCity\LostInTheCity.csproj", "{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -427,6 +431,14 @@ Global
 		{669E6476-0708-485B-8A4F-FCA754B469E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{669E6476-0708-485B-8A4F-FCA754B469E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{669E6476-0708-485B-8A4F-FCA754B469E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7286297D-4BDB-464B-93B4-1128CDE76754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7286297D-4BDB-464B-93B4-1128CDE76754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7286297D-4BDB-464B-93B4-1128CDE76754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7286297D-4BDB-464B-93B4-1128CDE76754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -508,6 +520,8 @@ Global
 		{5AA533D0-0A7F-4327-9B36-0EA0D1C439FA} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
 		{AE4B5DCB-BFDF-465A-ADEE-FB2A6387BDFB} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
 		{669E6476-0708-485B-8A4F-FCA754B469E0} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
+		{7286297D-4BDB-464B-93B4-1128CDE76754} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
+		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}

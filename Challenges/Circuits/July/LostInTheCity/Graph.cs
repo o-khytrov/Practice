@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace LostInTheCity
 {
@@ -21,9 +22,9 @@ namespace LostInTheCity
         /// Добавление вершины
         /// </summary>
         /// <param name="vertexName">Имя вершины</param>
-        public void AddVertex(string vertexName)
+        public void AddVertex(string vertexName, int value)
         {
-            Vertices.Add(vertexName, new GraphVertex(vertexName));
+            Vertices.Add(vertexName, new GraphVertex(vertexName, value));
         }
 
         /// <summary>
@@ -55,6 +56,22 @@ namespace LostInTheCity
                 v1.AddEdge(v2, weight);
                 // v2.AddEdge(v1, weight);
             }
+        }
+
+        public string WebGraphviz()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine("digraph finite_state_machine {");
+            foreach (var v in Vertices)
+            {
+                foreach (var e in v.Value.Edges)
+                {
+                    sb.AppendLine($"\"{v.Value.Name}({v.Value.Value})\" -> \"{e.ConnectedVertex.Name}({e.ConnectedVertex.Value})\"  [ label = \"{e.EdgeWeight}\" ];");
+                }
+            }
+            sb.AppendLine("}");
+
+            return sb.ToString();
         }
     }
 }

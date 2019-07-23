@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace LostInTheCity
 {
@@ -10,6 +12,7 @@ namespace LostInTheCity
     /// </summary>
     public class GraphVertex
     {
+        public PointF Point { get; set; }
         /// <summary>
         /// Название вершины
         /// </summary>
@@ -20,16 +23,18 @@ namespace LostInTheCity
         /// </summary>
         public List<GraphEdge> Edges { get; }
 
-        public int CanopyIndex { get; set; }
-
+        public int Value { get; set; }
         /// <summary>
         /// Конструктор
         /// </summary>
         /// <param name="vertexName">Название вершины</param>
-        public GraphVertex(string vertexName)
+        public GraphVertex(string vertexName, int value)
         {
             Name = vertexName;
             Edges = new List<GraphEdge>();
+            Value = value;
+            var random = new Random();
+            Point = new PointF(random.Next(10), random.Next(10));
         }
 
         /// <summary>
