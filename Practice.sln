@@ -165,6 +165,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrengthOfTtheGame", "Chall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostInTheCity", "Challenges\Circuits\July\LostInTheCity\LostInTheCity.csproj", "{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountWaysToAssignUniqueCapToEveryPperson", "Challenges\Circuits\July\CountWaysToAssignUniqueCapToEveryPperson\CountWaysToAssignUniqueCapToEveryPperson.csproj", "{95586D2A-DB43-4C6F-AF83-4C407D86A86F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -439,6 +441,10 @@ Global
 		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95586D2A-DB43-4C6F-AF83-4C407D86A86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95586D2A-DB43-4C6F-AF83-4C407D86A86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95586D2A-DB43-4C6F-AF83-4C407D86A86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95586D2A-DB43-4C6F-AF83-4C407D86A86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -522,6 +528,7 @@ Global
 		{669E6476-0708-485B-8A4F-FCA754B469E0} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
 		{7286297D-4BDB-464B-93B4-1128CDE76754} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
 		{37F09AB8-5A3E-4C3C-8A50-63ECBDB8E5C4} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
+		{95586D2A-DB43-4C6F-AF83-4C407D86A86F} = {E89EBC25-8E04-44B4-AFE5-6E54ECF3FACE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
