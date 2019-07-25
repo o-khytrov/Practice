@@ -21,7 +21,7 @@ namespace StrengthOfTtheGame
             var N = A[0];// Number of players
             var M = A[1];//  Number of parameters
             var P = Console.ReadLine().Trim().Split(' ').Select(Int32.Parse).ToArray();
-
+            var strength = P.Strength();
             // Find maximum element in arr[] 
             int max_ele = P[0];
             for (int i = 1; i < P.Length; i++)
@@ -76,6 +76,7 @@ public static class Extensions
 {
     public static int Strength(this int[] array)
     {
+        var rep = string.Empty;
         if (array.Length == 1)
         {
             return array[0];
@@ -83,8 +84,11 @@ public static class Extensions
         var xor = array[0] ^ array[1];
         for (int i = 1; i < array.Length - 1; i++)
         {
+            rep = rep + $"{xor}^{array[i + 1]}^";
             xor = xor ^ array[i + 1];
         }
+        rep = rep + $" = {xor }";
+        Console.WriteLine(rep);
         return xor;
     }
 }

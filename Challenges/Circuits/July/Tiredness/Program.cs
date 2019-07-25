@@ -484,8 +484,10 @@ public class Processor
             var a = line.Trim().Split(' ').Select(Int32.Parse).ToArray();
             sb.AppendLine(line);
         }
-        throw new Exception(sb.ToString());
+        
+throw new Exception(sb.ToString());
     }
+
     public List<string> Answer()
     {
         var strings = Path.Split(new[] { ";" }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).ToArray();

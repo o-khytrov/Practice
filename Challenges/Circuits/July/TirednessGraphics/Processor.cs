@@ -53,7 +53,7 @@ namespace LostInTheCity
                 {
                     var cost = GeneralCost;
                     Canopy bestCanopy = null;
-                    var canopiesOver = canopies.Where(c => c.P1.X <= i && c.P2.X >= i && c.P1.Y < j && c.P2.Y > j);
+                    var canopiesOver = canopies.Where(c => c.P1.X <= i && c.P2.X >= i && c.P1.Y <= j && c.P2.Y >= j);
                     if (canopiesOver.Any())
                     {
                         cost = canopiesOver.Min(x => x.Rate);
