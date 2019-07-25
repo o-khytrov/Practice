@@ -7,8 +7,9 @@ namespace StrengthOfTtheGame
 {
     internal class Program
     {
+        public static int counter { get; set; }
         private const int MOD = 1000000007;
-        public static List<int> Results { get; set; }
+        private static Dictionary<int, int> dict = new Dictionary<int, int>();
 
         private static void Main(string[] args)
         {
@@ -22,24 +23,27 @@ namespace StrengthOfTtheGame
             var M = A[1];//  Number of parameters
             var P = Console.ReadLine().Trim().Split(' ').Select(Int32.Parse).ToArray();
             var strength = P.Strength();
-            // Find maximum element in arr[] 
+            // Find maximum element in arr[]
             int max_ele = P[0];
             for (int i = 1; i < P.Length; i++)
                 if (P[i] > max_ele)
                     max_ele = P[i];
-            // Maximum possible XOR value 
+            // Maximum possible XOR value
             int m = (1 << (int)(Math.Log(max_ele, 2) + 1)) - 1;
 
-            Results = new List<int>();
+            for (int i = 0; i <= m; i++)
+            {
+                dict.Add(i, 0);
+            }
 
             Compute(P, 0);
-
-            var dict = Results.GroupBy(x => x).ToDictionary(x => x.Key, x => x.Count());
+            ComputeStack(P);
             var counts = new List<int>();
 
             for (int i = 0; i <= M; i++)
             {
                 var count = 0;
+
                 if (dict.ContainsKey(i))
                 {
                     count = dict[i];
@@ -47,12 +51,36 @@ namespace StrengthOfTtheGame
 
                 counts.Add(count % MOD);
             }
+            Console.WriteLine(counter);
             Console.WriteLine(string.Join(" ", counts));
             Console.ReadKey();
         }
 
+        private static void ComputeStack(int[] array)
+        {
+            int index = 0;
+            var stack = new Stack<int[]>();
+            stack.Push(array);
+
+            while (stack.Any())
+            {
+                var arr = stack.Pop();
+
+                for (int i = 0; i < array[index]; i++)
+                {
+                    var clone = (int[])array.Clone();
+                    clone[index] = i;
+                    stack.Push(clone);
+                }
+
+                index++;
+            }
+
+
+        }
         private static void Compute(int[] array, int ind)
         {
+            counter++;
             if (ind > array.Length - 1)
             {
                 return;
@@ -64,7 +92,7 @@ namespace StrengthOfTtheGame
 
                 if (ind == array.Length - 1)
                 {
-                    Results.Add(clone.Strength());
+                    dict[clone.Strength()]++;
                 }
                 Compute(clone, ind + 1);
             }
@@ -84,11 +112,9 @@ public static class Extensions
         var xor = array[0] ^ array[1];
         for (int i = 1; i < array.Length - 1; i++)
         {
-            rep = rep + $"{xor}^{array[i + 1]}^";
             xor = xor ^ array[i + 1];
         }
-        rep = rep + $" = {xor }";
-        Console.WriteLine(rep);
+
         return xor;
     }
 }
