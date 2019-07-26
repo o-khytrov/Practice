@@ -13,6 +13,7 @@ namespace SpecialBinaryTree
     internal class Program
     {
         public static int Mod = 1000000007;
+        public static int counter;
 
         private static int Factorial(long n)
         {
@@ -42,6 +43,10 @@ namespace SpecialBinaryTree
             if (l == r)
             {
                 Console.WriteLine(string.Join(" ", arr));
+                if (arr.isSpecialBT(0, 1))
+                {
+                    counter++;
+                }
                 return;
             }
             else
@@ -51,16 +56,15 @@ namespace SpecialBinaryTree
                     swap(arr, l, i);
                     Permute(arr, l + 1, r);
                     swap(arr, l, i);
-
                 }
             }
         }
 
         private static void swap(int[] arr, int l, int r)
         {
-            arr[l] = arr[l] ^ arr[r];
-            arr[r] = arr[l] ^ arr[r];
-            arr[l] = arr[l] ^ arr[r];
+            var temp = arr[l];
+            arr[l] = arr[r];
+            arr[r] = temp;
         }
 
         private static void Main(string[] args)
@@ -74,10 +78,12 @@ namespace SpecialBinaryTree
 
             for (int t = 0; t < T; t++)
             {
+                counter = 0;
                 line = Console.ReadLine();
                 var n = int.Parse(line);
                 var maxNumberOfTrees = Math.Pow(n, n - 2) % Mod;
                 Compute(n);
+                Console.WriteLine(counter);
             }
 
             Console.ReadKey();
@@ -159,6 +165,67 @@ namespace SpecialBinaryTree
         public static bool isEven(this int number)
         {
             return number % 2 == 0;
+        }
+
+        public static bool isSpecialBT(this int[] tree, int index, int level)
+        {
+            var levels = Math.Ceiling(Math.Log(10, tree.Length + 1));
+            if (!tree.HasChildren(index) && level == levels)
+            {
+                return true;
+            }
+            var root = tree[index];
+
+            var left = tree.GetLeftChild(index);
+            var right = tree.GetRightChild(index);
+
+            if (root.isEven() && left.isEven() && right.IsOdd() || root.IsOdd() && left.IsOdd() && right.isEven())
+            {
+                var indexOfLeftChild = (root * 2) + 1;
+                var indexOfRightChild = (root * 2) + 2;
+
+                return tree.isSpecialBT(indexOfLeftChild, level + 1)
+                    && tree.isSpecialBT(indexOfRightChild, level + 1);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool HasLeftChild(this int[] array, int root)
+        {
+            return array.Length - 1 >= (root * 2) + 1;
+        }
+
+        public static bool HasRightChild(this int[] array, int root)
+        {
+            return array.Length - 1 >= (root * 2) + 2;
+        }
+
+        public static bool HasChildren(this int[] tree, int root)
+        {
+            return tree.HasLeftChild(root) && tree.HasRightChild(root);
+        }
+
+        public static int GetLeftChild(this int[] array, int root)
+        {
+            var t = (root * 2) + 1;
+            if (t > array.Length - 1)
+            {
+                return 0;
+            }
+            return array[t];
+        }
+
+        public static int GetRightChild(this int[] array, int root)
+        {
+            var t = (root * 2) + 2;
+            if (t > array.Length - 1)
+            {
+                return 0;
+            }
+            return array[t];
         }
     }
 }
