@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 //** Every node contains a value that lies between 1 and N
@@ -9,100 +10,133 @@ using System.IO;
 
 namespace SpecialBinaryTree
 {
-    public class Node
-    {
-        private Node Right { get; set; }
-        private Node Left { get; set; }
-        public int Value { get; set; }
-
-        public static Node Insert(Node root, int value)
-        {
-            if (root == null)
-            {
-                root = new Node();
-                root.Value = value;
-            }
-            else
-            {
-                if (value.IsOdd())
-                {
-                    if (value.IsOdd())
-                    {
-                        root.Left = Node.Insert(root.Left, value);
-                    }
-                    else
-                    {
-                        root.Right = Node.Insert(root.Right, value);
-                    }
-                }
-                else if (value.isEven())
-                {
-                    if (value.isEven())
-                    {
-                        root.Left = Node.Insert(root.Left, value);
-                    }
-                    else
-                    {
-                        root.Right = Node.Insert(root.Right, value);
-                    }
-                }
-            }
-            return root;
-        }
-
-        public static Node BuildTree(int[] values, int min, int max)
-        {
-            if (min == max)
-            {
-                return null;
-            }
-            int median = min + (max - min) / 2;
-            return new Node
-            {
-                Value = values[median],
-                Left = BuildTree(values, min, median),
-                Right = BuildTree(values, median + 1, max)
-            };
-        }
-    }
-
     internal class Program
     {
-        private static int Factorial(int n)
+        public static int Mod = 1000000007;
+
+        private static int Factorial(long n)
         {
             var factorial = 1;
             for (int i = 1; i <= n; i++)
             {
-                factorial *= i;
+                factorial *= i % Mod;
             }
             return factorial;
         }
+
+        public static Dictionary<int, int> Memorization;
+
+        private static void Compute(int number)
+        {
+            var array = new int[number];
+            for (int i = 0; i < number; i++)
+            {
+                array[i] = i + 1;
+            }
+            int n = array.Length;
+            Permute(array, 0, n - 1);
+        }
+
+        private static void Permute(int[] arr, int l, int r)
+        {
+            if (l == r)
+            {
+                Console.WriteLine(string.Join(" ", arr));
+                return;
+            }
+            else
+            {
+                for (int i = l; i <= r; i++)
+                {
+                    swap(arr, l, i);
+                    Permute(arr, l + 1, r);
+                    swap(arr, l, i);
+
+                }
+            }
+        }
+
+        private static void swap(int[] arr, int l, int r)
+        {
+            arr[l] = arr[l] ^ arr[r];
+            arr[r] = arr[l] ^ arr[r];
+            arr[l] = arr[l] ^ arr[r];
+        }
+
         private static void Main(string[] args)
         {
             var value = Environment.GetEnvironmentVariable("Console_Txt", EnvironmentVariableTarget.User);
             if (value == "True")
                 Console.SetIn(new StreamReader("Console.txt"));
 
-            var T = Int32.Parse(Console.ReadLine().Trim());
+            string line = Console.ReadLine();
+            var T = int.Parse(line.Trim());
 
             for (int t = 0; t < T; t++)
             {
-                long maxNumber = 0;
-                var N = Int32.Parse(Console.ReadLine().Trim());
-                if (N == 2)
-                {
-                    maxNumber = N;
-                }
-                else
-                {
-                    maxNumber = (long)(Math.Pow(N, N - 2));
-                }
-                Console.WriteLine(Math.Log(4608,N));
-                var res = maxNumber % (Math.Pow(10, 9) + 7);
-                Console.WriteLine(res);
+                line = Console.ReadLine();
+                var n = int.Parse(line);
+                var maxNumberOfTrees = Math.Pow(n, n - 2) % Mod;
+                Compute(n);
             }
 
             Console.ReadKey();
+        }
+    }
+
+    internal class ArrayTree
+    {
+        private static int root = 0;
+        private static String[] str = new String[10];
+
+        /*create root*/
+
+        public void Root(String key)
+        {
+            str[0] = key;
+        }
+
+        /*create left son of root*/
+
+        public void set_Left(String key, int root)
+        {
+            int t = (root * 2) + 1;
+
+            if (str[root] == null)
+            {
+                Console.Write("Can't set child at {0}, no parent found\n", t);
+            }
+            else
+            {
+                str[t] = key;
+            }
+        }
+
+        /*create right son of root*/
+
+        public void set_Right(String key, int root)
+        {
+            int t = (root * 2) + 2;
+
+            if (str[root] == null)
+            {
+                Console.Write("Can't set child at {0}, no parent found\n", t);
+            }
+            else
+            {
+                str[t] = key;
+            }
+        }
+
+        public void print_Tree()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (str[i] != null)
+                    Console.Write(str[i]);
+                else
+                    Console.Write("-");
+            }
         }
     }
 
