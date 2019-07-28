@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -7,9 +6,7 @@ namespace StrengthOfTtheGame
 {
     internal class Program
     {
-        public static int counter { get; set; }
         private const int MOD = 1000000007;
-        private static Dictionary<int, int> dict = new Dictionary<int, int>();
 
         private static void Main(string[] args)
         {
@@ -18,84 +15,42 @@ namespace StrengthOfTtheGame
                 Console.SetIn(new StreamReader("Console.txt"));
 
             var A = Console.ReadLine().Trim().Split(' ').Select(Int32.Parse).ToArray();
+            var n = A[0];
+            var m = A[1];
+            var team = Console.ReadLine().Trim().Split(' ').Select(long.Parse).ToArray();
+            var val = new long[512];
+            for (int i = 0; i <= team[0]; i++)
+            {
+                val[i] = 1;
+            }
+            int counter = 0;
+            foreach (var player in team)
+            {
+                counter++;
+                if (counter == 1)
+                    continue;
 
-            var N = A[0];// Number of players
-            var M = A[1];//  Number of parameters
-            var P = Console.ReadLine().Trim().Split(' ').Select(Int32.Parse).ToArray();
-            var strength = P.Strength();
-            // Find maximum element in arr[]
-            int max_ele = P[0];
-            for (int i = 1; i < P.Length; i++)
-                if (P[i] > max_ele)
-                    max_ele = P[i];
-            // Maximum possible XOR value
-            int m = (1 << (int)(Math.Log(max_ele, 2) + 1)) - 1;
-
+                var temp = new long[512];
+                for (int i = 0; i <= player; i++)
+                {
+                    for (int j = 0; j < 512; j++)
+                    {
+                        if (val[j] > 0)
+                        {
+                            long xor = j ^ i;
+                            temp[xor] = (temp[xor] + val[j]) % MOD;
+                        }
+                    }
+                }
+                val = temp;
+            }
+            long[] final = new long[m + 1];
             for (int i = 0; i <= m; i++)
             {
-                dict.Add(i, 0);
+                final[i] = val[i];
             }
-
-            Compute(P, 0);
-            ComputeStack(P);
-            var counts = new List<int>();
-
-            for (int i = 0; i <= M; i++)
-            {
-                var count = 0;
-
-                if (dict.ContainsKey(i))
-                {
-                    count = dict[i];
-                }
-
-                counts.Add(count % MOD);
-            }
-            Console.WriteLine(counter);
-            Console.WriteLine(string.Join(" ", counts));
+            Console.WriteLine(string.Join(" ", final.Select(x => x.ToString())));
             Console.ReadKey();
-        }
-
-        private static void ComputeStack(int[] array)
-        {
-            int index = 0;
-            var stack = new Stack<int[]>();
-            stack.Push(array);
-
-            while (stack.Any())
-            {
-                var arr = stack.Pop();
-
-                for (int i = 0; i < array[index]; i++)
-                {
-                    var clone = (int[])array.Clone();
-                    clone[index] = i;
-                    stack.Push(clone);
-                }
-
-                index++;
-            }
-
-
-        }
-        private static void Compute(int[] array, int ind)
-        {
-            counter++;
-            if (ind > array.Length - 1)
-            {
-                return;
-            }
-            for (int i = 0; i <= array[ind]; i++)
-            {
-                var clone = (int[])array.Clone();
-                clone[ind] = i;
-
-                if (ind == array.Length - 1)
-                {
-                    dict[clone.Strength()]++;
-                }
-                Compute(clone, ind + 1);
-            }
         }
     }
 }
