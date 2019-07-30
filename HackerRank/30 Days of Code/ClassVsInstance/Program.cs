@@ -61,9 +61,9 @@ namespace ClassVsInstance
                 }
                 p.amIOld();
                 Console.WriteLine();
-
                 Console.ReadKey();
             }
+
         }
     }
 }
