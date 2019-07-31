@@ -12,22 +12,27 @@ namespace VowelRecognition
 
         public static void CountVowels(string s)
         {
-            int counter = 0;
-
-
-            for (int i = 0; i < s.Length; i++)
+            checked
             {
-                if (isVowel(s[i]))
-                {
-                    counter++;
-                    var prefix = i + 1;
-                    var suffix = s.Length - i;
-                    counter += (suffix * (suffix + 1) / 2);
-                    counter += (prefix * (prefix + 1) / 2);
-                }
-            }
+                long counter = 0;
 
-            Console.WriteLine(counter);
+                int lastNonVowel = 0;
+                for (int i = 0; i < s.Length; i++)
+                {
+                    if (isVowel(s[i]))
+                    {
+                        long count = ((long)s.Length - (long)i) * ((long)i + 1);
+                        counter += count;
+                    }
+                    else
+                    {
+                        lastNonVowel = s[i];
+                    }
+                }
+
+                Console.WriteLine(counter);
+            }
+            
         }
 
         private static void Main(string[] args)
