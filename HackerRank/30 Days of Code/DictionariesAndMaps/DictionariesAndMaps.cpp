@@ -12,48 +12,50 @@ using namespace std;
 
 int main()
 {
-	if (const char* env_p = std::getenv("Console_Txt"))
+	ifstream cin("Console.txt");
+
+	int n;
+	map<string, string> dict;
+	cin >> n;
+
+	int i;
+	for (i = 0; i < n; i++)
 	{
-		int n;
-		map<string, string> dict;
-		if (std::string(env_p) == "True")
-		{
-			ifstream cin("Console.txt");
-			cin >> n;
-
-			int i;
-			for ( i = 0; i < n; i++)
-			{
-				string name;
-				string phoneNumber;
-				cin >> name >> phoneNumber;
-				dict.insert(make_pair(name, phoneNumber));
-			}
-			int j;
-			for ( j = 0; j < n; j++)
-			{
-				string search;
-				string phone;
-				cin >> search;
-				phone = dict[search];
-				if (!phone.empty()) {
-					cout << search << "=" << phone << endl;
-
-				}
-				else {
-					cout << "Not found" << endl;
-				}
-			}
-
-		}
-
+		string name;
+		string phoneNumber;
+		cin >> name >> phoneNumber;
+		dict.insert(make_pair(name, phoneNumber));
 	}
+	int j;
+	do
+	{
+		string search;
+		
+		cin >> search;
+		if (search.empty())
+		{
+			break;
+		}
+		string phone;
+		phone = dict[search];
+		string message;
+		if (!phone.empty()) {
+
+			message = search + "=" + phone + "\n";
+		}
+		else {
+			message = "Not found\n";
+		}
+		cout << message;
+
+	} while (true);
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
+// Tips for Getting Started:
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
 //   3. Use the Output window to see build output and other messages
