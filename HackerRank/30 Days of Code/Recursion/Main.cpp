@@ -10,10 +10,27 @@
 #include <map>
 using namespace std;
 
+int factorial(int n) {
+	if (n == 1)
+	{
+		return n;
+	}
+
+	else
+	{
+		return  n * factorial(n - 1);
+	}
+
+}
+
 int main()
 {
 	ifstream cin("Console.txt");
 
-	
+	int n;
+	cin >> n;
+
+	int f = factorial(n);
+	cout << f;
 
 }

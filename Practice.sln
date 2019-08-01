@@ -233,6 +233,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LetUsUnderstandComputerCPP"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DictionariesAndMaps", "HackerRank\30 Days of Code\DictionariesAndMaps\DictionariesAndMaps.vcxproj", "{403DC1A0-6EA0-474A-A40C-5EA30C609D70}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Recursion", "HackerRank\30 Days of Code\Recursion\Recursion.vcxproj", "{DA0ECFEC-49F2-4D53-8684-385471890044}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1346,6 +1348,17 @@ Global
 		{403DC1A0-6EA0-474A-A40C-5EA30C609D70}.Release|x64.Build.0 = Release|x64
 		{403DC1A0-6EA0-474A-A40C-5EA30C609D70}.Release|x86.ActiveCfg = Release|Win32
 		{403DC1A0-6EA0-474A-A40C-5EA30C609D70}.Release|x86.Build.0 = Release|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Debug|Any CPU.Build.0 = Debug|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Debug|x64.ActiveCfg = Debug|x64
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Debug|x64.Build.0 = Debug|x64
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Debug|x86.Build.0 = Debug|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Release|x64.ActiveCfg = Release|x64
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Release|x64.Build.0 = Release|x64
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Release|x86.ActiveCfg = Release|Win32
+		{DA0ECFEC-49F2-4D53-8684-385471890044}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1459,6 +1472,7 @@ Global
 		{0CA3455B-19C2-4847-9B66-17255550E868} = {B09B2074-26D1-4CB5-AB51-FEE875DC4FF2}
 		{5043D98B-F967-4007-9B43-7F842A7C46AD} = {F75D537F-BFF4-4E99-9DE4-942AB4547BE1}
 		{403DC1A0-6EA0-474A-A40C-5EA30C609D70} = {B09B2074-26D1-4CB5-AB51-FEE875DC4FF2}
+		{DA0ECFEC-49F2-4D53-8684-385471890044} = {B09B2074-26D1-4CB5-AB51-FEE875DC4FF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
