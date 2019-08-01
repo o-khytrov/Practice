@@ -5,17 +5,7 @@ namespace LetUsUnderstandComputer
 {
     internal class Program
     {
-        static int countSetBits(long n)
-        {
-            int count = 0;
-            while (n > 0)
-            {
-                n = n &= (n - 1);
-                count++;
-            }
 
-            return count;
-        }
         private static void Main(string[] args)
         {
             Console.SetIn(new StreamReader("Console.txt"));
@@ -26,18 +16,28 @@ namespace LetUsUnderstandComputer
                 var X = long.Parse(Console.ReadLine());
                 var XBin = Convert.ToString(X, 2);
                 long counter = 0;
-                for (int d = 1; d <= X; d++)
+                if (X == 0)
                 {
-                    var r = X / d;
-                    var bin = countSetBits(d);
-                    var rbin = countSetBits(r);
-
-                    if (!(rbin > bin))
-                    {
-                        counter++;
-                    }
+                    Console.WriteLine("0");
+                    continue;
                 }
-                Console.WriteLine(counter);
+                else if (X == 1)
+                {
+                    Console.WriteLine("1");
+                    continue;
+                }
+                var b = Math.Log(X, 2);
+                if (b % 2 == 0)
+                {
+                    Console.WriteLine(X - (long)(Math.Pow(2, b / 2) + 1));
+                }
+                else
+                {
+                    var c = Math.Ceiling(b / 2);
+                    var n = (long)(X / Math.Pow(2, c));
+                    Console.WriteLine(X - n);
+                }
+              
             }
             Console.ReadKey();
         }
