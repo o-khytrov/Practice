@@ -12,16 +12,12 @@ namespace AnEquilateralTtriangle
             var value = Environment.GetEnvironmentVariable("Console_Txt", EnvironmentVariableTarget.User);
             if (value == "True")
                 Console.SetIn(new StreamReader("Console.txt"));
-            for (int i = 3; i < 20; i++)
-            {
-                var line = Console.ReadLine();
 
-                var n = i;
-                var figure = new MainFigure(n);
-
-                Console.WriteLine($"{n} {figure.numberOfRectangles} {n * n}");
-            }
-
+            var n = Int32.Parse(Console.ReadLine().Trim());
+            int ans = 0;
+            for (int i = 1; i < n; i++)
+                ans += (i + 1) * i * ((n - i) / 2) / 2;
+            Console.WriteLine(ans);
             Console.ReadKey();
         }
     }
