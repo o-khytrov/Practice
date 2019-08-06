@@ -275,6 +275,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsGame", "Books\CLR\Eve
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AbstractClasses", "HackerRank\30 Days of Code\AbstractClasses\AbstractClasses.vcxproj", "{5C15D7EA-8675-491E-8F2B-00ED1BA05346}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scope", "HackerRank\30 Days of Code\Scope\Scope.vcxproj", "{B434AF43-37E1-4A0F-9E31-39D5E36ED933}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColorTheBriksCPP", "Challenges\Easy\August\ColorTheBriksCPP\ColorTheBriksCPP.vcxproj", "{9BD36AC8-3A50-47E5-B437-7231D073CD3C}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
