@@ -295,6 +295,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeftRotation", "HackerRank\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewYearChaos", "HackerRank\Interview Preparation Kit\NewYearChaos\NewYearChaos.csproj", "{842288A7-8811-4FC8-95D9-815CD2F99C33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Books\CLR\Interfaces\Interfaces.csproj", "{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1686,6 +1688,18 @@ Global
 		{842288A7-8811-4FC8-95D9-815CD2F99C33}.Release|x64.Build.0 = Release|Any CPU
 		{842288A7-8811-4FC8-95D9-815CD2F99C33}.Release|x86.ActiveCfg = Release|Any CPU
 		{842288A7-8811-4FC8-95D9-815CD2F99C33}.Release|x86.Build.0 = Release|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Debug|x64.Build.0 = Debug|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Debug|x86.Build.0 = Debug|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Release|x64.ActiveCfg = Release|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Release|x64.Build.0 = Release|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Release|x86.ActiveCfg = Release|Any CPU
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1827,6 +1841,7 @@ Global
 		{36B70C77-2AF0-467D-B715-C7F65FF4BE69} = {9D66A711-B490-4FDF-86D3-33626DF63ABD}
 		{2253CF57-12BF-41EF-A25E-F0E6C5AE663F} = {9D66A711-B490-4FDF-86D3-33626DF63ABD}
 		{842288A7-8811-4FC8-95D9-815CD2F99C33} = {9D66A711-B490-4FDF-86D3-33626DF63ABD}
+		{3ED677C3-05D7-4207-905E-9CA4DFBA8DC6} = {164AE5FA-1278-4641-9EE2-DB3875040BF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
