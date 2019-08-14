@@ -10,5 +10,6 @@ public sealed class Program {
         DelegateReflection.Go("TwoInt32s", "Subtract", "123", "321");
         DelegateReflection.Go("OneString", "NumChars", "Hello there");
         DelegateReflection.Go("OneString", "Reverse", "Hello there");
+        
     }
 }
