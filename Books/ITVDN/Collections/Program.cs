@@ -20,15 +20,7 @@ namespace Collections
             {
                 Console.WriteLine(item);
             }
-            foreach (var item in col)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("---------------");
-            foreach (var item in col)
-            {
-                Console.WriteLine(item);
-            }
+          
             Console.ReadKey();
         }
     }
