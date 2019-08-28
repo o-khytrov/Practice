@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -13,33 +14,79 @@ namespace HealthOfAPerson
         {
             public int[] Days { get; set; }
             public int Health { get; set; }
-            public long J { get; set; }
+            public int J { get; set; }
 
             public long Walk()
             {
-                var sqrt = Math.Sqrt(J);
-
-                int day = 0;
-                for (int i = 0; i < sqrt; i++)
+                var number = J;
+                List<int> factors = new List<int>();
+                int max = (int)Math.Sqrt(number);  //round down
+                for (int factor = 1; factor <= max; ++factor)
                 {
-                    day++;
-                    if (J % day == 0 && Health <= Days[i])
+                    if (number % factor == 0)
+                    {
+                        if (factor < Days.Length && Days[factor] >= Health)
+                        {
+                            return factor;
+                        }
+
+                        if (factor != number / factor)
+                        {
+                            factors.Add(number / factor);
+                        }
+                    }
+                }
+                factors.Reverse();
+                foreach (var day in factors)
+                {
+                    if (day < Days.Length && Days[day] >= Health)
                     {
                         return day;
                     }
-                  
                 }
-                if (Days.Length > J - 1 && Health <= Days[J - 1])
-                {
-                    return J;
-                }
+
                 return -1;
             }
-
-
-
         }
+        public static long Walk(int J, int Health, int[] Days)
+        {
+            var number = J;
+            List<int> factors = new List<int>();
+            int max = (int)Math.Sqrt(number);  //round down
+            for (int factor = 1; factor <= max; ++factor)
+            {
+                if (number % factor == 0)
+                {
+                    if (factor < Days.Length && Days[factor] >= Health)
+                    {
+                        return factor;
+                    }
 
+                    if (factor != number / factor)
+                    {
+                        factors.Add(number / factor);
+                    }
+                }
+            }
+       
+            for (int i = factors.Count; i-- > 0;)
+            {
+                var day = factors[i];
+                if (day > Days.Length)
+                {
+                    break;
+                }
+                else
+                {
+                    if (Days[day] >= Health)
+                    {
+                        return day;
+                    }
+                }
+            }
+           
+            return -1;
+        }
         private static void Main(string[] args)
         {
             var value = Environment.GetEnvironmentVariable("Console_Txt", EnvironmentVariableTarget.User);
@@ -59,7 +106,7 @@ namespace HealthOfAPerson
                 var days = A[1];
                 l = Console.ReadLine().Trim();
                 s = s + "$" + l;
-                var H = l.Split(' ').Select(Int32.Parse).ToArray();
+                var H = l.Split(' ');
 
                 l = Console.ReadLine().Trim();
                 s = s + "$" + l;
@@ -68,17 +115,14 @@ namespace HealthOfAPerson
                 daysArr.CopyTo(Days, 1);
                 for (int i = 0; i < H.Length; i++)
                 {
-                    var p = new Person() { J = i + 1, Health = H[i], Days = Days };
-                    Console.WriteLine(p.Walk());
+                    //var p = new Person() { J = i + 1, Health = Int32.Parse(H[i]), Days = Days };
+                    //Console.WriteLine(p.Walk());
+                    Console.WriteLine(Walk(i + 1, Int32.Parse(H[i]), Days));
                 }
             }
 
             Console.ReadKey();
         }
 
-        private static void Show(string s)
-        {
-            throw new Exception(s);
-        }
     }
 }
