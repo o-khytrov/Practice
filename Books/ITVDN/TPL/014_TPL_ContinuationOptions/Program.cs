@@ -12,7 +12,7 @@ namespace _014_TPL_ContinuationOptions
         {
             byte result = 255;
 
-            //checked
+            checked
             {
                 result += 1;
             }
@@ -21,6 +21,16 @@ namespace _014_TPL_ContinuationOptions
         static void Main(string[] args)
         {
             Task<int> task = new Task<int>(MyTask);
+            Action<Task<int>> continuation;
+            continuation = t => Console.WriteLine("Result :" + task.Result);
+            task.ContinueWith(continuation, TaskContinuationOptions.OnlyOnRanToCompletion);
+
+            continuation = t => Console.WriteLine("Inner Exception :" + task.Exception.InnerException.Message);
+            task.ContinueWith(continuation, TaskContinuationOptions.OnlyOnFaulted);
+            task.Start();
+
+            Console.ReadKey();
+
         }
     }
 }
