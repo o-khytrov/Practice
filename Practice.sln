@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29209.62
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicProgramming", "BasicProgramming", "{3F4F6CC7-DB40-4FC9-84CA-45BF19E266BE}"
 EndProject
@@ -520,6 +520,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015_AsyncAwait_ReturnAndArgument_DotPeek", "Books\ITVDN\AsyncAwait\015_AsyncAwait_ReturnAndArgument_DotPeek\015_AsyncAwait_ReturnAndArgument_DotPeek.csproj", "{2FABDD95-6A7F-4E4B-8915-2E173DD0B06E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KritiAndHerBirthdayGift", "Arena\KritiAndHerBirthdayGift\KritiAndHerBirthdayGift.csproj", "{9EE6F97B-A181-45D2-9FA1-9A0036A34DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_TaskException", "Books\CLR\Threading\005_TaskException\005_TaskException.csproj", "{6B5514A2-EC85-4339-A890-53E33585D7D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -3174,6 +3176,18 @@ Global
 		{9EE6F97B-A181-45D2-9FA1-9A0036A34DCB}.Release|x64.Build.0 = Release|Any CPU
 		{9EE6F97B-A181-45D2-9FA1-9A0036A34DCB}.Release|x86.ActiveCfg = Release|Any CPU
 		{9EE6F97B-A181-45D2-9FA1-9A0036A34DCB}.Release|x86.Build.0 = Release|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Debug|x86.Build.0 = Debug|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Release|x64.Build.0 = Release|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{6B5514A2-EC85-4339-A890-53E33585D7D7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -3428,6 +3442,7 @@ Global
 		{DA0A7D08-2835-4CD8-9359-8B35E11480DF} = {A67118A3-7F73-4D45-B410-9A2F434D0C3F}
 		{2FABDD95-6A7F-4E4B-8915-2E173DD0B06E} = {A67118A3-7F73-4D45-B410-9A2F434D0C3F}
 		{9EE6F97B-A181-45D2-9FA1-9A0036A34DCB} = {45CC8B8A-FAC7-49DE-91E6-72B116DBC812}
+		{6B5514A2-EC85-4339-A890-53E33585D7D7} = {19AEDF89-6CB9-4ED0-B8E3-CE94FD2CC551}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93CDDBDB-DB8F-43E8-BB1F-D3B36832D70E}
