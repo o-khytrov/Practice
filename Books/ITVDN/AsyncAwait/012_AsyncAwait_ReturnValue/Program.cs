@@ -23,6 +23,11 @@ namespace _012_AsyncAwait_ReturnValue
     {
         static void Main(string[] args)
         {
+            MyClass my = new MyClass();
+            Task<int> task = my.OperationAsync();
+            task.ContinueWith(t => Console.WriteLine("Результат {0}", t.Result));
+
+            Console.ReadKey();
         }
     }
 }
