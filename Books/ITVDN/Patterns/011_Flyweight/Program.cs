@@ -2,6 +2,8 @@
 
 namespace _011_Flyweight
 { // Паттерн Flyweight
+    //Используется для экономии памяти
+    //Дает возможножность со помощью наследования представить один и тот же объект в разных ролях
     internal abstract class Flyweight
     {
         public abstract void Greeting(string speech);

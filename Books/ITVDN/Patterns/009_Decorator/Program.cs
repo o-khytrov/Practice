@@ -2,6 +2,9 @@
 
 namespace _009_Decorator
 {
+    // Wrapper
+    // Работает как обертка над классом, предоставляя его новые возможности
+
     public abstract class Component
     {
         public abstract void Operation();
