@@ -54,7 +54,7 @@ namespace _021_Strategy
         {
             public override void Sort(ref int[] array)
             {
-                Console.WriteLine("Selection Sort");
+                Console.WriteLine("Insertion Sort");
             }
         }
         static void Main(string[] args)
