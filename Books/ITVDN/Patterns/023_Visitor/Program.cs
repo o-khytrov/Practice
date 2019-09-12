@@ -3,6 +3,8 @@ using System.Collections;
 
 namespace _023_Visitor
 {
+    //Образует обход набора объектов с разнородными интерфейсами
+
     public abstract class Visitor
     {
         public abstract void VisitBoysHouse(BoysHouse boysHouse);
